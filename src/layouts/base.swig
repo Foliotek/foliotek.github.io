@@ -5,7 +5,7 @@
 		<title> {%=title%} </title>
 
 		<link rel="Stylesheet" type="text/css" href="css/all.min.css" />
-		<link rel="icon" href="favicon-64.ico" />
+		<link rel="icon" href="favico-64.png" />
 	</head>
 	<body class="{%=bodyClass%}">
 		{% block body %}{% endblock %}
