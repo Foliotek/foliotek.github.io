@@ -124,13 +124,13 @@ module.exports = function (grunt) {
 
 
 	grunt.registerTask('prod', [
-		'clean:prod', 
-		'assemble:prod', 
+		'clean', 
+		'assemble', 
 		'useminPrepare', 
 		'concat:generated', 
 		'uglify:generated', 
 		'less', 
-		'usemin'
-		//,'connect::keepalive'
+		'usemin',
+		'connect::keepalive'
 	]);
 };
