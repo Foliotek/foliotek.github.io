@@ -7,13 +7,13 @@ module.exports = function (grunt) {
 			dev: {
 				options: {
 					port: 8000,
-					base: 'dist/'
+					base: './'
 				}
 			}
 		},
 
 		clean: {
-			all: ['dist']
+			all: ['dist','./*.html', './js', './css']
 		},
 
 		assemble: {
@@ -29,7 +29,7 @@ module.exports = function (grunt) {
 			},
 			dist: {
 				files: {
-					'dist/': ["src/pages/**/*.swig" ]
+					'./': ["src/pages/**/*.swig" ]
 				}
 			}
 		},
@@ -37,19 +37,19 @@ module.exports = function (grunt) {
 		copy: {
 			dist: {
 				files: [
-					{ expand: true, flatten: true, src: 'src/assets/static/js/**', dest: 'dist/js/', filter: 'isFile' },
-					{ expand: true, flatten: true, src: 'src/assets/static/*.*', dest: 'dist/' }
+					{ expand: true, flatten: true, src: 'src/assets/static/js/**', dest: './js/', filter: 'isFile' },
+					{ expand: true, flatten: true, src: 'src/assets/static/*.*', dest: './' }
 
 				]
 			},
 			js: {
 				files: [
-					{ expand: true, cwd: 'src/assets/js', src:'**', dest: 'dist/js/', filter: 'isFile' }
+					{ expand: true, cwd: 'src/assets/js', src:'**', dest: './js/', filter: 'isFile' }
 				]
 			},
 			images: {
 				files: [
-					{ expand: true, cwd: 'src/assets/images', src: '**', dest: 'dist/images', filter: 'isFile' }
+					{ expand: true, cwd: 'src/assets/images', src: '**', dest: './images', filter: 'isFile' }
 				]
 			}
 		},
@@ -61,7 +61,7 @@ module.exports = function (grunt) {
 					cleancss: true
 				},
 				files: {
-					'dist/css/all.min.css': ['src/assets/css/main.less']
+					'./css/all.min.css': ['src/assets/css/main.less']
 				}
 			}
 		},
@@ -69,7 +69,7 @@ module.exports = function (grunt) {
 		uglify: {
 			dist: {
 				files: {
-					'dist/js/all.min.js': ['dist/js/all.min.js']
+					'./js/all.min.js': ['./js/all.min.js']
 				}
 			}
 		},
@@ -86,18 +86,18 @@ module.exports = function (grunt) {
 		}, 
 
 		useminPrepare: {
-			html: 'dist/**/*.html',
+			html: './**/*.html',
 			options: {
-				dest: 'dist',
+				dest: './',
 				root: 'src/assets'
 			}
 		},
 
 		usemin: {
-			html: ['dist/{,*/}*.html'],
+			html: ['./{,*/}*.html'],
 			// css: ['dist/css/{,*/}*.css'],
 			options: {
-				dirs: ['dist']
+				dirs: ['./']
 			}
 		}
 	});
@@ -124,13 +124,13 @@ module.exports = function (grunt) {
 
 
 	grunt.registerTask('prod', [
-		'clean', 
-		'assemble', 
+		'clean:prod', 
+		'assemble:prod', 
 		'useminPrepare', 
 		'concat:generated', 
 		'uglify:generated', 
 		'less', 
-		'usemin', 
-		'connect::keepalive'
+		'usemin'
+		//,'connect::keepalive'
 	]);
 };
