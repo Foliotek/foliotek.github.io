@@ -6,7 +6,7 @@ bodyClass: 'home'
 
 {% block body %}
 <header>
-	<h1>Foliotek</h1>
+	<h1 class="foliotek">Folio<i>tek</i></h1>
 	<h2>Helping grow competent and passionate professionals</h2>
 </header>
 <nav>

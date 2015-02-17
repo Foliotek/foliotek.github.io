@@ -11,7 +11,8 @@
 	}
 
 	h2 {
-		font-size: 1em;
+		font-size: 1.2em;
+		margin-top: -5px;
 	}
 }
 
@@ -103,10 +104,10 @@ nav {
 		opacity: 0;
 		z-index: -1;
 		position: absolute;
-		top: 0;
+		top: 110px;
 		left: 0;
+		bottom: 0;
 		width: 100%;
-		height: 100%;
 		.transition(opacity .2s linear);
 		background: rgba(255, 255, 255, 0.4);
 		text-align: center;
@@ -116,7 +117,7 @@ nav {
 			width: 75px;
 			height: 25px;
 			background: white;
-			margin-top: 150px;
+			margin-top: 40px;
 			color: black;
 			text-decoration: none;
 		}
@@ -124,5 +125,8 @@ nav {
 	&:hover .button-wrap {
 		opacity: 1;
 		z-index: 1;
+	}
+	img {
+		height: 250px;
 	}
 }
