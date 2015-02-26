@@ -6,7 +6,7 @@
 			nameLight: 'Ajax',
 			nameBold: 'Q',
 			description: 'A tiny, simple jQuery plugin for sequential ajax requests',
-			link: 'http://foliotek.github.io/ajaxq/',
+			link: 'http://foliotek.github.io/AjaxQ/',
 			imgNum: 3
 		},
 		{
@@ -14,7 +14,7 @@
 			nameLight: 'Doc',
 			nameBold: 'Editable',
 			description: 'Clean WYSIWYG editing in your browser',
-			link: 'http://foliotek.github.io/doceditable/',
+			link: 'http://foliotek.github.io/DocEditable/',
 			imgNum: 6
 		},
 	];
