@@ -1,0 +1,24 @@
+[{
+	"name": "ajaxQ",
+	"nameLight": "Ajax",
+	"nameBold": "Q",
+	"description": "A tiny, simple jQuery plugin for sequential ajax requests",
+	"link": "http://foliotek.github.io/AjaxQ/",
+	"imgNum": 3
+},
+{
+	"name": "DocEditable",
+	"nameLight": "Doc",
+	"nameBold": "Editable",
+	"description": "Clean WYSIWYG editing in your browser",
+	"link": "http://foliotek.github.io/DocEditable/",
+	"imgNum": 6
+},
+{
+	"name": "LTI-Tester",
+	"nameLight": "LTI-",
+	"nameBold": "Tester",
+	"description": "A tool to help test LTI integration with Foliotek or other LTI compatible sites.",
+	"link": "http://foliotek.github.io/LTI-Tester/",
+	"imgNum": 2
+}]
