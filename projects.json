@@ -7,11 +7,11 @@
 	"imgNum": 3
 },
 {
-	"name": "DocEditable",
-	"nameLight": "Doc",
-	"nameBold": "Editable",
-	"description": "Clean WYSIWYG editing in your browser",
-	"link": "http://foliotek.github.io/DocEditable/",
+	"name": "Croppie",
+	"nameLight": "C",
+	"nameBold": "roppie",
+	"description": "A Javascript Image Cropper",
+	"link": "http://foliotek.github.io/Croppie/",
 	"imgNum": 6
 },
 {
