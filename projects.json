@@ -8,8 +8,8 @@
 },
 {
 	"name": "Croppie",
-	"nameLight": "C",
-	"nameBold": "roppie",
+	"nameLight": "Croppie",
+	"nameBold": "",
 	"description": "A Javascript Image Cropper",
 	"link": "http://foliotek.github.io/Croppie/",
 	"imgNum": 6
