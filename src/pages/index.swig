@@ -32,7 +32,7 @@ bodyClass: 'home'
 			<h3>{{nameLight}}<strong>{{nameBold}}</strong></h3>
 			<p>{{description}}</p>
 		</div>
-		<img src="http://www.foliotek.com/Content/img/schools/slide{{imgNum}}.jpg" />
+		<img src="//www.foliotek.com/Content/img/schools/slide{{imgNum}}.jpg" />
 		<div class="button-wrap">
 			<a href="{{link}}">View</a>
 		</div>
